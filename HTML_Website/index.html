@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="YANG Mattew" />
+    <meta name="description" content="Travaux dirigées sur le PHP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNG Validator</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="CSS/wikipediaStyleLight.css" />
+    <link rel="stylesheet" href="CSS/wikipediaStyle.css" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img id="nav-image" src="./images/logo.png" alt="Logo du site" title="Retour à l'accueil" />
+        </a>
+        <nav id="header-nav">
+            <ul class="header-nav-ul">
+            </ul>
+        </nav>
+        <nav id="header-options">
+            <ul class="header-nav-ul">
+                <li class="header-nav-li"><a
+                        href="http://yangmattew.alwaysdata.net/jsChimp/index.php&#63;style=night-mode">mode sombre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-part">
+            <h1>PNG Validator</h1>
+            <section>
+                <h2>Upload PNG</h2>
+                <form id="uploadForm" action="success.html" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Please upload an image:</legend>
+                        <input type="file" name="image" id="imageInput" accept="image/png">
+                        <input type="button" value="Submit" id="imageUpload">
+                        <div id="imagePreview"></div>
+                    </fieldset>
+                </form>
+                <p id="resultText"></p>
+                <script type="text/javascript" src="exo.js"></script>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

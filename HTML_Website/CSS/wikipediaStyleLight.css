@@ -1,0 +1,61 @@
+/**
+ * This CSS sheet seeks to imitate the 'Vector legacy' layout of Wikipedia
+ * This was the default layout used by English Wikipedia from 2010 to 2022
+ * In this CSS, slight modifications have been made, in order to add a personal touch.
+ */
+
+/* TL Tags */
+html {
+    background: linear-gradient(90deg, #fbfbfb 0%, #ffffff 17%);
+}
+
+.main-part {
+    background-color: #ffffff;
+    border: 1px solid #a7d7f9;
+    border-right-width: 0;
+    color: #202122;
+    direction: ltr;
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+    margin: 0;
+    margin-left: 12em;
+    margin-top: 75px;
+    padding: 1.25em 1.5em 1.5em 1.5em;
+    position: relative;
+    z-index: 0;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    margin: 0;
+}
+
+.header-nav-li {
+    background-image: linear-gradient(to top, #a7d7f9 0, #e8f2f8 1px, #ffffff 100%);
+    float: left;
+    font-size: calc(1em * 0.875);
+    border: solid #a7d7f9;
+    border-width: 0px 1px;
+}
+
+/* Other */
+th {
+    background-color: #a4d8fd;
+}
+
+th,
+td {
+    border: 1.5px solid black;
+    padding: .5em;
+    text-align: center;
+}
+
+#current-page {
+    background: white !important;
+}
